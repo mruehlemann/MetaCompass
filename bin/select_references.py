@@ -200,7 +200,7 @@ def main():
    nump   = sys.argv[3]
    covthreshold = float(sys.argv[4])
 #----------------------------------------#
-   ref = pathbin +"/src/markers/markers.refseq.dna"
+   ref = pathbin +"/src/metaphyler/markers/markers.refseq.dna"
    param = "-word_size 28"
 # run blast
    cmd = "%s %s -num_threads %s -evalue 1e-10 -perc_identity 97 -outfmt 6 -max_target_seqs 100 -query %s -db %s > %s/%s.%s.all"%(blast,param,nump,query,ref,outdir,prefix,blast)
