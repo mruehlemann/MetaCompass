@@ -17,6 +17,7 @@ bioRxiv 212506; doi: https://doi.org/10.1101/212506
 * MEGAHIT (>=) 1.0.6: https://github.com/voutcn/megahit
 * Java runtime (>=) 1.7 
 * Perl5 (>=) 5.16
+* MASH: https://github.com/marbl/Mash
 
 # Memory and Disk Space Requirements.
 You must have at least 13GB of hard disk space to perform a normal installation.
