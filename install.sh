@@ -39,6 +39,25 @@ cmd="cd ../../"
 echo $cmd
 $cmd
 
+
+cmd="wget --no-check-certificate https://github.com/marbl/Mash/releases/download/v2.0/mash-Linux64-v2.0.tar -P bin"
+echo $cmd
+$cmd
+
+cmd="cd ./bin/"
+echo $cmd
+$cmd
+
+cmd="tar -xvf ./mash-Linux64-v2.0.tar"
+echo $cmd
+$cmd
+
+
+cmd="cd .."
+echo $cmd
+$cmd
+
+
 cmd="wget --no-check-certificate https://gembox.cbcb.umd.edu/metacompass/refseq.tar.gz"
 echo $cmd
 $cmd
