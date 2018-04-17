@@ -69,7 +69,7 @@ def average(L):
 def init_marker_data(marker2coverage):
    marker2length={}
    mlength=0
-   with open(pathbin + "/src/markers/markers.length", "rt") as markerfile:
+   with open(pathbin + "/src/metaphyler/markers/markers.length", "rt") as markerfile:
    #with open("/Users/victoria/metacompass/new/bin/new_pick/markers.length", "rt") as markerfile:
       id=""
       for line in markerfile:
