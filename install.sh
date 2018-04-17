@@ -31,6 +31,9 @@ cmd="tar -xzvf ./markers.tar.gz"
 echo $cmd
 $cmd
 
+cmd="awk '/^>/ {if (seqlen){print seqlen}; printf $0"\t" ;seqlen=0;next; } { seqlen += length($0)}END{print seqlen}' markers/markers.refseq.dna > markers/markers.length"
+echo $cmd
+$cmd
 
 cmd="cd ../../"
 echo $cmd
