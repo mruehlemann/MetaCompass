@@ -236,7 +236,7 @@ def main():
    cmd ="grep '>'  %s/%s.refseq.fna|tr -d '>'|cut -f1 -d ' '> %s/%s.refseq.ids" %(outdir,prefix,outdir,prefix)
    print ("%s" % (cmd))
    os.system(cmd)
-   cmd = "%s/bin/extractSeq %s/refseq/bacgeno.fna %s/%s.refseq_old.ids > %s/%s.refseq_old.fna"%(pathbin,pathbin,outdir,prefix,outdir,prefix)
+   cmd = "%s/bin/extractSeq %s/refseq/bacgeno.fna %s/%s.refseq_old.ids > %s/%s.refseq.fna"%(pathbin,pathbin,outdir,prefix,outdir,prefix)
 
    print ("%s" % (cmd))
    os.system(cmd)
